@@ -24,7 +24,7 @@ export const DB_CONFIG = {
   db_user: process.env["DB_USER"] || "root",
   db_password: process.env["DB_PASSWORD"] || "root",
   config: {
-    dialect: process.env["DB_DIALECT"],
+    dialect: process.env["DB_DIALECT"] || "mysql",
     port: process.env["DB_PORT"] || "3306",
   },
 };
