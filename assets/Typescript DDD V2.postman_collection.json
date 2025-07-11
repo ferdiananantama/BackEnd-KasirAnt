@@ -1,0 +1,1422 @@
+{
+	"info": {
+		"_postman_id": "37284110-b5aa-42f2-96cd-57318191d6c0",
+		"name": "Typescript DDD V2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24246095",
+		"_collection_link": "https://mobile-x-backend.postman.co/workspace/Team-Workspace~b5f7be47-b716-45a1-8d70-28ec7e8645b4/collection/24246095-37284110-b5aa-42f2-96cd-57318191d6c0?action=share&creator=24246095&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Web Admin",
+			"item": [
+				{
+					"name": "Master Data",
+					"item": [
+						{
+							"name": "User",
+							"item": [
+								{
+									"name": "Store User",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "email",
+													"value": "admin@xwadminsasa.coms",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "passwords",
+													"type": "text"
+												},
+												{
+													"key": "fullname",
+													"value": "super admin",
+													"type": "text"
+												},
+												{
+													"key": "isActive",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "avatarPath",
+													"type": "file",
+													"src": "/D:/DOWNLOAD/PHOTOS/avatar-1625475211863.jpg"
+												},
+												{
+													"key": "role",
+													"value": "ADMIN",
+													"description": "SUPER_ADMIN | ADMIN | INSPECTOR",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{base_url}}admin/user",
+											"host": [
+												"{{base_url}}admin"
+											],
+											"path": [
+												"user"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "email",
+															"value": "admin@admin.com",
+															"type": "text"
+														},
+														{
+															"key": "password",
+															"value": "password",
+															"type": "text"
+														},
+														{
+															"key": "fullname",
+															"value": "super admin",
+															"type": "text"
+														},
+														{
+															"key": "isActive",
+															"value": "1",
+															"type": "text"
+														},
+														{
+															"key": "avatarPath",
+															"type": "file",
+															"src": "/C:/Users/mfurq/Pictures/5dcd33fe-28be-4277-84db-76500c7a3f60.jpg"
+														},
+														{
+															"key": "role",
+															"value": "ADMIN",
+															"description": "SUPER_ADMIN | ADMIN | INSPECTOR",
+															"type": "text"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{base_url}}admin/user",
+													"host": [
+														"{{base_url}}admin"
+													],
+													"path": [
+														"user"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												},
+												{
+													"key": "Access-Control-Allow-Methods",
+													"value": "GET, POST, PUT, PATCH, DELETE"
+												},
+												{
+													"key": "Access-Control-Allow-Headers",
+													"value": "content-type, Authorization"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "380"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"17c-DipAC57vvPA0LtHtQ+jhKuH5n1I\""
+												},
+												{
+													"key": "Date",
+													"value": "Fri, 19 May 2023 07:43:45 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"message\": \"success\",\n    \"data\": {\n        \"id\": \"m2vupalhyp8bn033xtbyh0p5\",\n        \"email\": \"admin@admin.com\",\n        \"password\": \"$2b$10$5ivsN7ywDAjlLY5Isbjvw.5uKC8nTaLOZ6bWs3cbeLLaCIlKifo4.\",\n        \"fullname\": \"super admin\",\n        \"isActive\": true,\n        \"avatarPath\": \"storage\\\\user\\\\fe22eefe7240216a8c40773bba1d3705.jpg\",\n        \"role\": \"ADMIN\",\n        \"createdAt\": \"2023-05-19T07:43:45.192Z\",\n        \"updatedAt\": \"2023-05-19T07:43:45.192Z\",\n        \"deletedAt\": null\n    }\n}"
+										},
+										{
+											"name": "Failed",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "email",
+															"value": "super@admin.com",
+															"type": "text"
+														},
+														{
+															"key": "password",
+															"value": "password",
+															"type": "text"
+														},
+														{
+															"key": "fullname",
+															"value": "super admin",
+															"type": "text"
+														},
+														{
+															"key": "isActive",
+															"value": "1",
+															"type": "text"
+														},
+														{
+															"key": "avatar_path",
+															"type": "file",
+															"src": "/C:/Users/user/Downloads/WhatsApp Image 2023-05-10 at 18.33.53.jpeg"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{base_url}}admin/user",
+													"host": [
+														"{{base_url}}admin"
+													],
+													"path": [
+														"user"
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												},
+												{
+													"key": "Access-Control-Allow-Methods",
+													"value": "GET, POST, PUT, PATCH, DELETE"
+												},
+												{
+													"key": "Access-Control-Allow-Headers",
+													"value": "content-type, Authorization"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "2814"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"afe-SsHGk65JQ8KugNTXAZj7644zlTc\""
+												},
+												{
+													"key": "Date",
+													"value": "Fri, 12 May 2023 08:47:59 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"statusCode\": 400,\n    \"message\": \"Failed to create user\",\n    \"e\": {\n        \"name\": \"SequelizeUniqueConstraintError\",\n        \"errors\": [\n            {\n                \"message\": \"email must be unique\",\n                \"type\": \"unique violation\",\n                \"path\": \"email\",\n                \"value\": \"super@admin.com\",\n                \"origin\": \"DB\",\n                \"instance\": {\n                    \"id\": \"pjangqbmkwbbzkskq1kbp04c\",\n                    \"email\": \"super@admin.com\",\n                    \"password\": \"$2b$10$Tg1o27FYmnW3UU2DWjMF0O/wQjjhvnbZ5Rgm8qah4rSFCKMB0UPiG\",\n                    \"fullname\": \"super admin\",\n                    \"is_active\": \"1\",\n                    \"avatar_path\": \"avatarName\",\n                    \"updatedAt\": \"2023-05-12T08:47:59.727Z\",\n                    \"createdAt\": \"2023-05-12T08:47:59.727Z\"\n                },\n                \"validatorKey\": \"not_unique\",\n                \"validatorName\": null,\n                \"validatorArgs\": []\n            }\n        ],\n        \"parent\": {\n            \"length\": 277,\n            \"name\": \"error\",\n            \"severity\": \"ERROR\",\n            \"code\": \"23505\",\n            \"detail\": \"Key (email)=(super@admin.com) already exists.\",\n            \"schema\": \"public\",\n            \"table\": \"users\",\n            \"constraint\": \"users_email_key\",\n            \"file\": \"d:\\\\pginstaller_12.auto\\\\postgres.windows-x64\\\\src\\\\backend\\\\access\\\\nbtree\\\\nbtinsert.c\",\n            \"line\": \"570\",\n            \"routine\": \"_bt_check_unique\",\n            \"sql\": \"INSERT INTO \\\"users\\\" (\\\"id\\\",\\\"email\\\",\\\"password\\\",\\\"fullname\\\",\\\"is_active\\\",\\\"avatar_path\\\",\\\"created_at\\\",\\\"updated_at\\\") VALUES ($1,$2,$3,$4,$5,$6,$7,$8) RETURNING \\\"id\\\",\\\"email\\\",\\\"password\\\",\\\"fullname\\\",\\\"is_active\\\",\\\"avatar_path\\\",\\\"created_at\\\",\\\"updated_at\\\",\\\"deleted_at\\\",\\\"created_at\\\",\\\"updated_at\\\",\\\"deleted_at\\\";\",\n            \"parameters\": [\n                \"pjangqbmkwbbzkskq1kbp04c\",\n                \"super@admin.com\",\n                \"$2b$10$Tg1o27FYmnW3UU2DWjMF0O/wQjjhvnbZ5Rgm8qah4rSFCKMB0UPiG\",\n                \"super admin\",\n                \"1\",\n                \"avatarName\",\n                \"2023-05-12 08:47:59.727 +00:00\",\n                \"2023-05-12 08:47:59.727 +00:00\"\n            ]\n        },\n        \"original\": {\n            \"length\": 277,\n            \"name\": \"error\",\n            \"severity\": \"ERROR\",\n            \"code\": \"23505\",\n            \"detail\": \"Key (email)=(super@admin.com) already exists.\",\n            \"schema\": \"public\",\n            \"table\": \"users\",\n            \"constraint\": \"users_email_key\",\n            \"file\": \"d:\\\\pginstaller_12.auto\\\\postgres.windows-x64\\\\src\\\\backend\\\\access\\\\nbtree\\\\nbtinsert.c\",\n            \"line\": \"570\",\n            \"routine\": \"_bt_check_unique\",\n            \"sql\": \"INSERT INTO \\\"users\\\" (\\\"id\\\",\\\"email\\\",\\\"password\\\",\\\"fullname\\\",\\\"is_active\\\",\\\"avatar_path\\\",\\\"created_at\\\",\\\"updated_at\\\") VALUES ($1,$2,$3,$4,$5,$6,$7,$8) RETURNING \\\"id\\\",\\\"email\\\",\\\"password\\\",\\\"fullname\\\",\\\"is_active\\\",\\\"avatar_path\\\",\\\"created_at\\\",\\\"updated_at\\\",\\\"deleted_at\\\",\\\"created_at\\\",\\\"updated_at\\\",\\\"deleted_at\\\";\",\n            \"parameters\": [\n                \"pjangqbmkwbbzkskq1kbp04c\",\n                \"super@admin.com\",\n                \"$2b$10$Tg1o27FYmnW3UU2DWjMF0O/wQjjhvnbZ5Rgm8qah4rSFCKMB0UPiG\",\n                \"super admin\",\n                \"1\",\n                \"avatarName\",\n                \"2023-05-12 08:47:59.727 +00:00\",\n                \"2023-05-12 08:47:59.727 +00:00\"\n            ]\n        },\n        \"fields\": {\n            \"email\": \"super@admin.com\"\n        },\n        \"sql\": \"INSERT INTO \\\"users\\\" (\\\"id\\\",\\\"email\\\",\\\"password\\\",\\\"fullname\\\",\\\"is_active\\\",\\\"avatar_path\\\",\\\"created_at\\\",\\\"updated_at\\\") VALUES ($1,$2,$3,$4,$5,$6,$7,$8) RETURNING \\\"id\\\",\\\"email\\\",\\\"password\\\",\\\"fullname\\\",\\\"is_active\\\",\\\"avatar_path\\\",\\\"created_at\\\",\\\"updated_at\\\",\\\"deleted_at\\\",\\\"created_at\\\",\\\"updated_at\\\",\\\"deleted_at\\\";\",\n        \"level\": \"error\",\n        \"timestamp\": \"2023-05-12T08:47:59.751Z\"\n    }\n}"
+										}
+									]
+								},
+								{
+									"name": "Find All",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}admin/user?limit&page&search",
+											"host": [
+												"{{base_url}}admin"
+											],
+											"path": [
+												"user"
+											],
+											"query": [
+												{
+													"key": "limit",
+													"value": null
+												},
+												{
+													"key": "page",
+													"value": null
+												},
+												{
+													"key": "search",
+													"value": null
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Find All",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{base_url}}admin/user?limit&page&search",
+													"host": [
+														"{{base_url}}admin"
+													],
+													"path": [
+														"user"
+													],
+													"query": [
+														{
+															"key": "limit",
+															"value": null
+														},
+														{
+															"key": "page",
+															"value": null
+														},
+														{
+															"key": "search",
+															"value": null
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												},
+												{
+													"key": "Access-Control-Allow-Methods",
+													"value": "GET, POST, PUT, PATCH, DELETE"
+												},
+												{
+													"key": "Access-Control-Allow-Headers",
+													"value": "content-type, Authorization"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "721"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"2d1-gmtwSfsXLIqmGiERIEr/N+StVvA\""
+												},
+												{
+													"key": "Date",
+													"value": "Fri, 19 May 2023 07:58:18 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"message\": \"success\",\n    \"data\": {\n        \"page\": 1,\n        \"limit\": 10,\n        \"search\": \"\",\n        \"data\": [\n            {\n                \"id\": \"qgxzcr5qcc8fveoh0wc9hsnl\",\n                \"email\": \"super@admin.com\",\n                \"password\": \"$2b$10$1wGs7AUqIHTfZy4agEDYi.bG2mIR615n9.xpBoI6cU6uuOOhxtfQ2\",\n                \"fullname\": \"super admin\",\n                \"isActive\": true,\n                \"avatarPath\": \"\",\n                \"role\": null,\n                \"createdAt\": \"2023-05-16T11:01:24.116Z\",\n                \"updatedAt\": \"2023-05-16T11:01:24.116Z\",\n                \"deletedAt\": null\n            },\n            {\n                \"id\": \"m2vupalhyp8bn033xtbyh0p5\",\n                \"email\": \"admin@admin.com\",\n                \"password\": \"$2b$10$5ivsN7ywDAjlLY5Isbjvw.5uKC8nTaLOZ6bWs3cbeLLaCIlKifo4.\",\n                \"fullname\": \"super admin\",\n                \"isActive\": true,\n                \"avatarPath\": \"storage\\\\user\\\\fe22eefe7240216a8c40773bba1d3705.jpg\",\n                \"role\": \"ADMIN\",\n                \"createdAt\": \"2023-05-19T07:43:45.192Z\",\n                \"updatedAt\": \"2023-05-19T07:43:45.192Z\",\n                \"deletedAt\": null\n            }\n        ]\n    }\n}"
+										},
+										{
+											"name": "Paginate validation error",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{base_url}}admin/user?limit=2131dwq&page=dwqdwq&search",
+													"host": [
+														"{{base_url}}admin"
+													],
+													"path": [
+														"user"
+													],
+													"query": [
+														{
+															"key": "limit",
+															"value": "2131dwq"
+														},
+														{
+															"key": "page",
+															"value": "dwqdwq"
+														},
+														{
+															"key": "search",
+															"value": null
+														}
+													]
+												}
+											},
+											"status": "Unprocessable Entity",
+											"code": 422,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												},
+												{
+													"key": "Access-Control-Allow-Methods",
+													"value": "GET, POST, PUT, PATCH, DELETE"
+												},
+												{
+													"key": "Access-Control-Allow-Headers",
+													"value": "content-type, Authorization"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "139"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"8b-1M0psLbVIxMOf5RiIz4x346T+hU\""
+												},
+												{
+													"key": "Date",
+													"value": "Fri, 19 May 2023 08:00:21 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"statusCode\": 422,\n    \"message\": \"Validation Error\",\n    \"data\": {\n        \"page\": [\n            \"Expected number, received nan\"\n        ],\n        \"limit\": [\n            \"Expected number, received nan\"\n        ]\n    }\n}"
+										}
+									]
+								},
+								{
+									"name": "Find By Id",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}admin/user/:id",
+											"host": [
+												"{{base_url}}admin"
+											],
+											"path": [
+												"user",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "m2vupalhyp8bn033xtbyh0p5"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{base_url}}admin/user/:id",
+													"host": [
+														"{{base_url}}admin"
+													],
+													"path": [
+														"user",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "qgxzcr5qcc8fveoh0wc9hsnl"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												},
+												{
+													"key": "Access-Control-Allow-Methods",
+													"value": "GET, POST, PUT, PATCH, DELETE"
+												},
+												{
+													"key": "Access-Control-Allow-Headers",
+													"value": "content-type, Authorization"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "326"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"146-fon+QCekO6xHkJPX+XFfrZKB2p8\""
+												},
+												{
+													"key": "Date",
+													"value": "Fri, 19 May 2023 08:00:47 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"message\": \"success\",\n    \"data\": {\n        \"id\": \"qgxzcr5qcc8fveoh0wc9hsnl\",\n        \"email\": \"super@admin.com\",\n        \"password\": \"$2b$10$1wGs7AUqIHTfZy4agEDYi.bG2mIR615n9.xpBoI6cU6uuOOhxtfQ2\",\n        \"fullname\": \"super admin\",\n        \"isActive\": true,\n        \"avatarPath\": \"\",\n        \"role\": null,\n        \"createdAt\": \"2023-05-16T11:01:24.116Z\",\n        \"updatedAt\": \"2023-05-16T11:01:24.116Z\",\n        \"deletedAt\": null\n    }\n}"
+										},
+										{
+											"name": "not found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{base_url}}admin/user/:id",
+													"host": [
+														"{{base_url}}admin"
+													],
+													"path": [
+														"user",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "qgxzcr5qcc8fveoh0wc9hsnld"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												},
+												{
+													"key": "Access-Control-Allow-Methods",
+													"value": "GET, POST, PUT, PATCH, DELETE"
+												},
+												{
+													"key": "Access-Control-Allow-Headers",
+													"value": "content-type, Authorization"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "49"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"31-gvHridM2YOMTcH4C1hsEaXKO0FM\""
+												},
+												{
+													"key": "Date",
+													"value": "Fri, 19 May 2023 08:00:57 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"statusCode\": 404,\n    \"message\": \"User was not found\"\n}"
+										}
+									]
+								},
+								{
+									"name": "Update",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "email",
+													"value": "admin@admin1.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "passwords",
+													"type": "text"
+												},
+												{
+													"key": "fullname",
+													"value": "Admin ke 1",
+													"type": "text"
+												},
+												{
+													"key": "isActive",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "role",
+													"value": "ADMIN",
+													"type": "text"
+												},
+												{
+													"key": "avatarPath",
+													"type": "file",
+													"src": []
+												}
+											]
+										},
+										"url": {
+											"raw": "{{base_url}}admin/user/:id",
+											"host": [
+												"{{base_url}}admin"
+											],
+											"path": [
+												"user",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "ozso5p2xih8fq4i6fz8w0msz"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Update",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "email",
+															"value": "admin@admin.comdwqd",
+															"type": "text"
+														},
+														{
+															"key": "password",
+															"value": "passwords",
+															"type": "text"
+														},
+														{
+															"key": "fullname",
+															"value": "Admin ke2dwdw",
+															"type": "text"
+														},
+														{
+															"key": "isActive",
+															"value": "1",
+															"type": "text"
+														},
+														{
+															"key": "role",
+															"value": "ADMIN",
+															"type": "text"
+														},
+														{
+															"key": "avatarPath",
+															"type": "file",
+															"src": "/D:/DOWNLOAD/PHOTOS/download.gif"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{base_url}}admin/user/:id",
+													"host": [
+														"{{base_url}}admin"
+													],
+													"path": [
+														"user",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "qzwymil6vd4wzvjfmfqeq1i3"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												},
+												{
+													"key": "Access-Control-Allow-Methods",
+													"value": "GET, POST, PUT, PATCH, DELETE"
+												},
+												{
+													"key": "Access-Control-Allow-Headers",
+													"value": "content-type, Authorization"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "386"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"182-NSUBnwMJl0J17qRz0/61lP4h5Tw\""
+												},
+												{
+													"key": "Date",
+													"value": "Fri, 19 May 2023 12:09:25 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"message\": \"success\",\n    \"data\": {\n        \"id\": \"qzwymil6vd4wzvjfmfqeq1i3\",\n        \"email\": \"admin@admin.comdwqd\",\n        \"password\": \"$2b$10$e0IICrF4cClug.hLKi4WduO4I6j90zUaXnq.kDCuKAUwL7z7/qze6\",\n        \"fullname\": \"Admin ke2dwdw\",\n        \"isActive\": true,\n        \"avatarPath\": \"storage\\\\user\\\\2f1331baf15f0bb67496e1588189902e.gif\",\n        \"role\": \"ADMIN\",\n        \"createdAt\": \"2023-05-19T09:20:09.123Z\",\n        \"updatedAt\": \"2023-05-19T12:09:25.611Z\",\n        \"deletedAt\": null\n    }\n}"
+										}
+									]
+								},
+								{
+									"name": "Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}admin/user/:id",
+											"host": [
+												"{{base_url}}admin"
+											],
+											"path": [
+												"user",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": null
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Delete",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{base_url}}admin/user/:id",
+													"host": [
+														"{{base_url}}admin"
+													],
+													"path": [
+														"user",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "j5v4um8nlr9dbvi6n8bdzsk7"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												},
+												{
+													"key": "Access-Control-Allow-Methods",
+													"value": "GET, POST, PUT, PATCH, DELETE"
+												},
+												{
+													"key": "Access-Control-Allow-Headers",
+													"value": "content-type, Authorization"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "35"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"23-+Vuz+A3WZJP0jlk7FOLtE5djxrk\""
+												},
+												{
+													"key": "Date",
+													"value": "Fri, 19 May 2023 08:33:25 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"message\": \"User has been deleted\"\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "Login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Set Token ENV\", function () {\r",
+											"    const response = pm.response.json()\r",
+											"    const token = response.data?.token || \"\"\r",
+											"    console.log(\"token retrieved =>\", token)\r",
+											"    pm.environment.set(\"token\", token);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\" : \"super@admin.com\",\r\n    \"password\" : \"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}web-admin/auth/login",
+									"host": [
+										"{{base_url}}web-admin"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Succes",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"email\" : \"super@admin.com\",\r\n    \"password\" : \"password\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}web-admin/auth/login",
+											"host": [
+												"{{base_url}}web-admin"
+											],
+											"path": [
+												"auth",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, PUT, PATCH, DELETE"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "content-type, Authorization"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "811"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"32b-7w/s5hR/QpbkV2bg8Zz/kAHlJvA\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 19 May 2023 11:50:11 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"success\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Im54aGo3NzFteWlsNzg3ajF6NW1jbHJweCIsImVtYWlsIjoic3VwZXJAYWRtaW4uY29tIiwiZnVsbG5hbWUiOiJzdXBlciBhZG1pbiIsImlzQWN0aXZlIjp0cnVlLCJhdmF0YXJQYXRoIjoic3RvcmFnZVxccmVzdW1lLWNoZWNrXFxiMTlkZTlkM2RmOWRkNDU4OTlmZTI5N2NhNzJjYWZmNS5wbmciLCJyb2xlIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIzLTA1LTEyVDA4OjMxOjQ0LjY5MloiLCJ1cGRhdGVkQXQiOiIyMDIzLTA1LTE5VDA2OjI2OjQzLjA0N1oiLCJkZWxldGVkQXQiOm51bGwsImlhdCI6MTY4NDQ5NzAxMX0.5hwEqkm34SWIy5R_pVj3ENooaugVFoKekHJ_TDXD15M\",\n        \"user\": {\n            \"id\": \"nxhj771myil787j1z5mclrpx\",\n            \"email\": \"super@admin.com\",\n            \"fullname\": \"super admin\",\n            \"isActive\": true,\n            \"avatarPath\": \"storage\\\\resume-check\\\\b19de9d3df9dd45899fe297ca72caff5.png\",\n            \"role\": null,\n            \"createdAt\": \"2023-05-12T08:31:44.692Z\",\n            \"updatedAt\": \"2023-05-19T06:26:43.047Z\",\n            \"deletedAt\": null\n        }\n    }\n}"
+								},
+								{
+									"name": "Wrong Password",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"email\" : \"super@admin.com\",\r\n    \"password\" : \"passwords\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}web-admin/auth/login",
+											"host": [
+												"{{base_url}}web-admin"
+											],
+											"path": [
+												"auth",
+												"login"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, PUT, PATCH, DELETE"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "content-type, Authorization"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "45"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2d-1OULIiP5xdljk+umhUnBoMuFJC4\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 19 May 2023 11:50:29 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"statusCode\": 401,\n    \"message\": \"Wrong Password\"\n}"
+								},
+								{
+									"name": "Validation Failed",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"email\" : \"super@admin.com\"\r\n    // \"password\" : \"passwords\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}web-admin/auth/login",
+											"host": [
+												"{{base_url}}web-admin"
+											],
+											"path": [
+												"auth",
+												"login"
+											]
+										}
+									},
+									"status": "Unprocessable Entity",
+									"code": 422,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, PUT, PATCH, DELETE"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "content-type, Authorization"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "81"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"51-7o7/y0rq2ZdQpivx3BZyGufoyhI\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 19 May 2023 12:04:16 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"statusCode\": 422,\n    \"message\": \"Validation Failed\",\n    \"data\": {\n        \"password\": [\n            \"Required\"\n        ]\n    }\n}"
+								},
+								{
+									"name": "LG-1 Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"email\" : \"super@admin.com\",\r\n    \"password\" : \"password\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}web-admin/auth/login",
+											"host": [
+												"{{base_url}}web-admin"
+											],
+											"path": [
+												"auth",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, PUT, PATCH, DELETE"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "content-type, Authorization"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "811"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"32b-M6e3+2/TKdYbd+QdX+hHvnNPmik\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 24 May 2023 06:44:06 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"success\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Im54aGo3NzFteWlsNzg3ajF6NW1jbHJweCIsImVtYWlsIjoic3VwZXJAYWRtaW4uY29tIiwiZnVsbG5hbWUiOiJzdXBlciBhZG1pbiIsImlzQWN0aXZlIjp0cnVlLCJhdmF0YXJQYXRoIjoic3RvcmFnZVxccmVzdW1lLWNoZWNrXFxiMTlkZTlkM2RmOWRkNDU4OTlmZTI5N2NhNzJjYWZmNS5wbmciLCJyb2xlIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIzLTA1LTEyVDA4OjMxOjQ0LjY5MloiLCJ1cGRhdGVkQXQiOiIyMDIzLTA1LTE5VDA2OjI2OjQzLjA0N1oiLCJkZWxldGVkQXQiOm51bGwsImlhdCI6MTY4NDkxMDY0Nn0.Su82T1AQjdoYp9RT9cygkB9v6LvMPTVlV-uJLQbA9mE\",\n        \"user\": {\n            \"id\": \"nxhj771myil787j1z5mclrpx\",\n            \"email\": \"super@admin.com\",\n            \"fullname\": \"super admin\",\n            \"isActive\": true,\n            \"avatarPath\": \"storage\\\\resume-check\\\\b19de9d3df9dd45899fe297ca72caff5.png\",\n            \"role\": null,\n            \"createdAt\": \"2023-05-12T08:31:44.692Z\",\n            \"updatedAt\": \"2023-05-19T06:26:43.047Z\",\n            \"deletedAt\": null\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Me",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}web-admin/auth/me",
+									"host": [
+										"{{base_url}}web-admin"
+									],
+									"path": [
+										"auth",
+										"me"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}web-admin/auth/me",
+											"host": [
+												"{{base_url}}web-admin"
+											],
+											"path": [
+												"auth",
+												"me"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, PUT, PATCH, DELETE"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "content-type, Authorization"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "746"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2ea-m2/pQ6J1Vkgxb5DjZDZ8VXUZdic\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 19 May 2023 12:04:56 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"success\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Im54aGo3NzFteWlsNzg3ajF6NW1jbHJweCIsImVtYWlsIjoic3VwZXJAYWRtaW4uY29tIiwiZnVsbG5hbWUiOiJzdXBlciBhZG1pbiIsImlzQWN0aXZlIjp0cnVlLCJhdmF0YXJQYXRoIjoiYXZhdGFyTmFtZSIsInJvbGUiOm51bGwsImNyZWF0ZWRBdCI6IjIwMjMtMDUtMTJUMDg6MzE6NDQuNjkyWiIsInVwZGF0ZWRBdCI6IjIwMjMtMDUtMThUMDQ6NDg6NDkuNzQ1WiIsImRlbGV0ZWRBdCI6bnVsbCwiaWF0IjoxNjg0Mzg1NDg2fQ.AyULRHhyZQ1VVAT0I-VYZAoY-DTx4Fu-B_epsAUB_o4\",\n        \"user\": {\n            \"id\": \"nxhj771myil787j1z5mclrpx\",\n            \"email\": \"super@admin.com\",\n            \"fullname\": \"super admin\",\n            \"isActive\": true,\n            \"avatarPath\": \"storage\\\\resume-check\\\\b19de9d3df9dd45899fe297ca72caff5.png\",\n            \"role\": null,\n            \"createdAt\": \"2023-05-12T08:31:44.692Z\",\n            \"updatedAt\": \"2023-05-19T06:26:43.047Z\",\n            \"deletedAt\": null\n        }\n    }\n}"
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}web-admin/auth/me",
+											"host": [
+												"{{base_url}}web-admin"
+											],
+											"path": [
+												"auth",
+												"me"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, PUT, PATCH, DELETE"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "content-type, Authorization"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "43"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2b-hGShxOkieaAVDloBubJVM+h58D8\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 19 May 2023 12:05:13 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"statusCode\": 401,\n    \"message\": \"Unauthorized\"\n}"
+								},
+								{
+									"name": "User Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}web-admin/auth/me",
+											"host": [
+												"{{base_url}}web-admin"
+											],
+											"path": [
+												"auth",
+												"me"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, PUT, PATCH, DELETE"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "content-type, Authorization"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "49"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"31-gvHridM2YOMTcH4C1hsEaXKO0FM\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 19 May 2023 12:06:46 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"statusCode\": 404,\n    \"message\": \"User was not found\"\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/health-check",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"health-check"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
