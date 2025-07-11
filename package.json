@@ -10,7 +10,8 @@
     "dev": "nodemon -e ts --ignore ./dist/* --exec \"tsc && tsc-alias && node ./dist/index.js\"",
     "lint": "eslint src --ext .ts --fix",
     "bundle": "yarn build && pkg .",
-    "generate": "node src/helper/LibraryGenerator/index.js"
+    "generate": "node src/helper/LibraryGenerator/index.js",
+    "start": "node ./dist/index.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
